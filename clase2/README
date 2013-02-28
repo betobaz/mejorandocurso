@@ -1,3 +1,6 @@
 # Clase 2 de mejorandocurso
+##Creación de la página para el carro Tezla Pepito
+###Estructura Semantica
+La pagina va a tener una cabecera, esta sera creada mendiante una etiqueta header. Dentro de la cabecera va a haber el titulo de la pagina con una etiqueta h1 y un subtitulo o slogan con una etiqueta h2
 
-##Estructura Semantica
+El contenido de la pagina va a ser delimitada por una etiqueta section. Van a existir 2 secciones, la primera va a mostrar la historia de carro dentro de una etiqueta article. La segunda sección va a mostrar la foto del carro para esto se va a ocupar 
