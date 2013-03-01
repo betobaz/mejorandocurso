@@ -1,0 +1,64 @@
+body{
+	background: #222;
+	color: #EEE;
+	font-family: Arial;
+	font-size: 16px;
+	text-align: center;
+}
+header
+{
+	background: url(logo.png) no-repeat 98%, url(fondo.png);
+	background-size: 100px, 100px 100px;
+	box-shadow: rgba(0,0,0,0.7) 5px 0px 10px;
+	margin: 0 0 1em 0;
+	padding: 0.5px 0;
+	width: 100%;
+}
+header h1
+{
+	font-size: 2em;
+	margin: 0;
+	text-shadow: rgba(0,0,0,0.7) 5px 5px 10px;
+}
+
+header h2{
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+#cochecito
+{
+	background: #EEE;
+	color: #222;
+	text-align: left;
+	width: 50%;
+}
+
+#cochecito img
+{
+	width: 100%;
+}
+
+#cochecito figcaption
+{
+	margin: 1em;
+}
+
+#cochecito, #historia
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#historia
+{
+	background: rgba(0,0,0,0.6);
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.7) 5px 5px 10px;
+	margin: 0 2% 1em 1em;
+	padding: 1em;
+	text-align: justify;
+	text-shadow: rgba(0,0,0,0.7) 2px 2px 1px;
+	width: 40%;
+}
