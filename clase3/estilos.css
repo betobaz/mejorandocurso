@@ -8,12 +8,49 @@ body{
 header
 {
 	background: url(logo.png) no-repeat 98%, url(fondo.png);
-	background-size: 100px, 100px 100px;
+	background-size: 80px, 100px 100px;
 	box-shadow: rgba(0,0,0,0.7) 5px 0px 10px;
 	margin: 0 0 1em 0;
 	padding: 0.5px 0;
 	width: 100%;
 }
+nav
+{
+	background: rgba(60, 60, 180, 0.5);
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+nav ul
+{
+	list-style: none;
+
+}
+nav ul li
+{
+	display: inline-block;	
+}
+
+nav ul li a
+{
+	background: #d23d15;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 1s ease;
+}
+nav ul li a:hover
+{
+	background: white;
+	color: black;
+	transform: scale(1.2) rotate(-365deg);
+
+}
+
 header h1
 {
 	font-size: 2em;
@@ -56,7 +93,7 @@ header h2{
 	background: rgba(0,0,0,0.6);
 	border-radius: 0.5em;
 	box-shadow: rgba(0,0,0,0.7) 5px 5px 10px;
-	margin: 0 2% 1em 1em;
+	margin: 0 2% 7em 1em;
 	padding: 1em;
 	text-align: justify;
 	text-shadow: rgba(0,0,0,0.7) 2px 2px 1px;
