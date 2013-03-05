@@ -47,13 +47,14 @@ function personalizar(evt){
 	$('#personalizacion').css(cambiosPersonalizacion);
 	$("#color div").on("click", cambiarColor);
 	$("#llantas figure").on("click", cambiarLlantas);
+	$("#techo figure").on("click", cambiarTecho);
 }
 
 function cambiarColor(evt)
 {
 	var colorito = $(this).attr("id"),
 		nuevoCoche = "c"+colorito+".jpg";
-	$("#cochecito img").attr("src", nuevoCoche);
+	$("#cochecito > img.coche").attr("src", nuevoCoche);
 }
 
 function cambiarLlantas(evt)
@@ -62,4 +63,12 @@ function cambiarLlantas(evt)
 		llanta = $self.attr("id")
 		nuevasLlantas = llanta + ".png";	
 	$('#llantas-personalizadas').find('img').toggleClass("girar").attr('src', nuevasLlantas);
+}
+
+function cambiarTecho(evt)
+{
+	var $self = $(this),
+		techo = $self.attr("id")
+		nuevoTecho = techo + ".png";	
+	$('#cochecito > img.techo').attr('src', nuevoTecho);
 }

@@ -217,6 +217,14 @@ header h2{
     margin-top: 21%;	
 }
 
+#cochecito .techo
+{
+	left: 41%;
+	position: absolute;
+	top: 8%;
+	width: 30%;
+}
+
 #llantas-personalizadas .girar
 {
 	transform: rotate(360deg);
