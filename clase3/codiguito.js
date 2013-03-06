@@ -52,5 +52,5 @@ function cambiarColor(evt)
 {
 	var colorito = $(this).attr("id"),
 		nuevoCoche = "c"+colorito+".jpg";
-	$("#cochecito img").attr("src", nuevoCoche);
+	$("#cochecito > img").attr("src", nuevoCoche);
 }
