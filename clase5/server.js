@@ -15,17 +15,24 @@ app.set('views','./views');
 //Agregado plugin static, se indica que 
 app.use(express.static('./public'));
 
-app.get("/", function(req, res){
-	res.render("home");
-});
+app.use(express.bodyParser());
+app.use(express.cookieParser());
 
-app.get("/mensajes/new/:mensaje", function(req, res){
-	// obtener los parametros con req.params
-	mensajes.push(req.params.mensaje);
-	ress.forEach(function(res){
-		res.send(mensajes+'<script>window.location.reload()</script>');
+app.get("/", function(req, res){
+	res.render("home",{
+		mensajes: mensajes
 	});
-	res.send("Tu mensaje es :" + req.params.mensaje);
+});
+// Post
+
+
+app.post("/mensajes/new", function(req, res){
+	// por post se obtiene los paramentros con body
+	mensajes.push(req.body.mensaje);
+	ress.forEach(function(res){
+		res.send(mensajes);
+	});
+	res.send("Tu mensaje es :" + req.body.mensaje);
 });
 
 app.get("/mensajes/list", function(req, res){
