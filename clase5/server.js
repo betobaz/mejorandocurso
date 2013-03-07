@@ -12,6 +12,8 @@ swig.init({
 app.engine('.html', cons.swig);
 app.set('view engine', 'html');
 app.set('views','./views');
+//Agregado plugin static
+app.use(express.static('./public'));
 
 app.get("/", function(req, res){
 	res.render("home");
