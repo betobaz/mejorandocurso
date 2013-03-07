@@ -1,6 +1,7 @@
 var express = require("express"),
 	app = express(),
-	mensajes = [];
+	mensajes = [],
+	ress = [];
 
 app.get("/", function(req, res){
 	res.send("hellow world");
@@ -9,11 +10,15 @@ app.get("/", function(req, res){
 app.get("/mensajes/new/:mensaje", function(req, res){
 	// obtener los parametros con req.params
 	mensajes.push(req.params.mensaje);
+	ress.forEach(function(res){
+		res.send(mensajes+'<script>window.location.reload()</script>');
+	});
 	res.send("Tu mensaje es :" + req.params.mensaje);
 });
 
 app.get("/mensajes/list", function(req, res){
-	res.send(mensajes+'<script>setTimeout(function(){window.location.reload()}, 1000)</script>');
+	ress.push(res);
+	//res.send();
 })
 
 app.listen(3000);
