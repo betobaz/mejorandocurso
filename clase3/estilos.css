@@ -191,3 +191,35 @@ header h2{
 {
 	transform: scale(1.2) rotate(365deg);
 }
+
+#llantas-personalizadas
+{
+	position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#llantas-personalizadas img
+{
+	width: 19%;
+	transition: all 1s ease;
+}
+
+#llantas-personalizadas .delantera
+{
+	margin-top: 21%;
+    margin-left: 12%;
+}
+
+#llantas-personalizadas .trasera
+{
+	margin-left: 41%;
+    margin-top: 21%;	
+}
+
+#llantas-personalizadas .girar
+{
+	transform: rotate(360deg);
+}
+
+
