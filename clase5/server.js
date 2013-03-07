@@ -12,7 +12,7 @@ swig.init({
 app.engine('.html', cons.swig);
 app.set('view engine', 'html');
 app.set('views','./views');
-//Agregado plugin static
+//Agregado plugin static, se indica que 
 app.use(express.static('./public'));
 
 app.get("/", function(req, res){
