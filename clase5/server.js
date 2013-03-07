@@ -13,7 +13,7 @@ app.get("/mensajes/new/:mensaje", function(req, res){
 });
 
 app.get("/mensajes/list", function(req, res){
-	res.send(mensajes);
+	res.send(mensajes+'<script>setTimeout(function(){window.location.reload()}, 1000)</script>');
 })
 
 app.listen(3000);
