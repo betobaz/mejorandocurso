@@ -1,10 +1,20 @@
 var express = require("express"),
+	swig = require("swig"),
+	cons = require("consolidate");
 	app = express(),
 	mensajes = [],
 	ress = [];
 
+swig.init({
+	cache: false
+});
+
+app.engine('.html', cons.swig);
+app.set('view engine', 'html');
+app.set('views','./views');
+
 app.get("/", function(req, res){
-	res.send("hellow world");
+	res.render("home");
 });
 
 app.get("/mensajes/new/:mensaje", function(req, res){
